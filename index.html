@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>TV Logic</title>
+</head>
+<body>
+    <div id="app">
+        <div class="tv_set">
+            <img src="./images/Lgscreen.jpg">
+
+        </div>
+        <div class="tv_stations">
+            
+            <!-- <img src="./images/screenOff.png"> -->
+            
+          
+        </div>
+       
+        <!-- buttons grid -->
+        <div class="container">
+            <div class="row">
+              <div class="col backtbn mt-20" @click="previous">
+                <a href="#" @click="previous">
+                    <img class="btn" src="./images/backBtn.png">
+                </a>
+              
+              </div>
+              <div class="col stopbtn">
+                <a href="#" @click="powerTv">
+                    <img class="btn" src="./images/stopBtn.png">
+                </a>
+              </div>
+              <div class="col nextbtn" @click="next">
+                <a href="#">
+                    <img class="btn" src="./images/nextBtn.png">
+                </a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./logic.js"></script>
+</body>
+</html>
